@@ -1,0 +1,25 @@
+extends ./layout
+
+block css
+  link(href='css/style.css', rel='stylesheet')
+
+block content
+  .container
+    div
+      .form-group
+        label(for='username') Email
+        input#username.form-control(type='email', placeholder='Email')
+      .form-group
+        label(for='phonenumber') Phone Number
+        input#phonenumber.form-control(type='tel', placeholder='+5555555555')
+      .form-group
+        label(for='pw1') Password
+        input#pw1.form-control(type='password', placeholder='Password')
+      .form-group
+        label(for='pw2') Password
+        input#pw2.form-control(type='password', placeholder='Password (again)')
+      button.btn.btn-default#register Register
+      br
+      a(href="/forgotpassword") Forgot your password?
+block js
+  script(src='js/register.js')

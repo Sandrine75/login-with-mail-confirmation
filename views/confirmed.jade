@@ -1,0 +1,14 @@
+extends ./layout
+
+block css
+  link(href='css/style.css', rel='stylesheet')
+
+block content
+  .container
+    br
+    .jumbotron
+      h1 Thanks for clicking the email link!
+      a(href='/login') Click to go back to the login page!
+
+block js
+  script(src='js/main.js')
